@@ -24,27 +24,33 @@
   <script src="https://kit.fontawesome.com/a554e9094a.js" crossorigin="anonymous"></script>
 </head>
 
-<!------------- Start Content ------------->
+<!------------------------------- Header ------------------------------->
 
 <body>
 
-  <header>
+  <header id="header">
 
-    <div class="header-title">
-      <h1>Heart 2 Art Therapy</h1>
-    </div>
+    <div class="header-wrapper">
 
-    <div class="header-nav">
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#posts">Posts</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header-title">
+        <h1>Heart 2 Art Therapy</h1>
+      </div>
+
+      <div class="header-nav">
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
     </div>
 
   </header>
+
+  <!------------------------------- About ------------------------------->
 
   <main>
 
@@ -56,48 +62,92 @@
           </figure>
           <div class="about-me">
             <h3>Hello! I'm Sarah Engelskirchen-Bugler.</h3>
-            <h4>I'm a Front-End Developer focused on building responsive web pages that users want to explore.</h4>
-            <p>I've worked in a number of positions in the past, but what connects them is that I have often played a
-              role in evolution and development. From learning and teaching updated processes to brand new positions, I
-              have been trusted with helping my teams change and adapt. My interest in development grew from my desire
-              to understand how the tools I use everyday work. There’s nothing quite like the 'aha' feeling of
-              discovering how all the pieces come together and then
-              using that knowledge to create something all your own. When I’m away from the computer, I’m probably
-              exploring the PNW, cheering on the Seattle Storm, or just relaxing with my wife and our fur babies.</p>
-            <p class="sign-off"> <span>Thank you for visiting, I can't wait to connect!</span> </p>
+            <h4>I'm an expressive arts therapist in Vancouver, WA</h4>
+            <p>I started Heart2Art therapy ...</p>
+            <p class="sign-off"> <span>Thank you for visiting!</span> </p>
           </div>
         </div>
       </div>
     </section>
 
+    <!------------------------------- Article ------------------------------->
+
     <article id="posts">
-      <div class="social-feed">
-        <iframe
-          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100072169922276&tabs=timeline&width=500&height=1000&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
-          width="500" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-          allowfullscreen="true"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
+      <section class="content-wrapper">
+        <div class="article-wrapper">
+          <div class="social-feed">
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100072169922276&tabs=timeline&width=500&height=1000&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
+              width="500" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+        </div>
+      </section>
     </article>
 
   </main>
 
+  <!------------------------------- Footer ------------------------------->
+
   <footer id="contact">
 
-  </footer>
+    <div class="footer-wrapper">
 
-  <!-------------- End Content -------------->
+      <h3>Feel free to reach out!</h3>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+      <div class="contact-wrapper">
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+        <div class="contact-info">
+
+          <h5>Interested in scheduling a meeting?</h5>
+          <p class="contact-element">sa.engelskirchen@gmail.com</p>
+
+        </div>
+
+        <div class="contact-info social-links">
+
+          <h5>Give me a follow!</h5>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com/people/Heart-2-Art-Therapy-PLLC/100072169922276/?ref=embed_page"
+                target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/heart2arttherapy/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <p>
+        Copyright
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        | Sarah Engelskirchen-Bugler
+      </p>
+
+    </div>
+
+    <!------------------------------- End ------------------------------->
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
